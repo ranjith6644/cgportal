@@ -50,6 +50,7 @@ class SelectCard extends StatelessWidget {
     var theme = Theme.of(context);
     return Card(
         color: Color.fromRGBO(242, 242, 242, 1),
+    
         child: Center(
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,

@@ -71,6 +71,8 @@ flutter:
      - assets/images/footerLogo_white.png
      - assets/images/quote_day.png
      - assets/images/word_day.png
+     - assets/images/quote_day_final.png
+     - assets/images/word_day_final.png
 
 
 

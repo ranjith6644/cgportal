@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   intl: ^0.16.1
   http: ^0.12.1
+  
   provider: ^4.1.3
   shared_preferences: ^0.5.7+3
   location: ^3.0.2
@@ -70,6 +71,8 @@ flutter:
      - assets/images/footerLogo_white.png
      - assets/images/quote_day.png
      - assets/images/word_day.png
+     - assets/images/quote_day_final.png
+     - assets/images/word_day_final.png
 
 
 

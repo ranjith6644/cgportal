@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>904432700571-v36nqargtjth6t66nkaj0veoebckj872.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.904432700571-v36nqargtjth6t66nkaj0veoebckj872</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCqcI_jQcGiS3z-d1ZdspKuMK3Gkup87D8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>904432700571</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hack.cgportal</string>
+	<key>PROJECT_ID</key>
+	<string>cgportal-e7860</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cgportal-e7860.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:904432700571:ios:3f5fda2f5ec940a9570a3e</string>
+	<key>DATABASE_URL</key>
+	<string>https://cgportal-e7860-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

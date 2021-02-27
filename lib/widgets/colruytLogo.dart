@@ -8,6 +8,7 @@ class ColruytLogo extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height * 0.12,
       margin: EdgeInsets.all(10),
+      padding: EdgeInsets.all(10),
       child: Image.asset(
         'assets/images/mainLogo_black.png',
         fit: BoxFit.cover,

@@ -1,10 +1,9 @@
 import 'package:cgportal/screens/hr_updates_screen.dart';
-import 'package:cgportal/screens/khelruytOverview_screen.dart';
 import 'package:cgportal/screens/khelruyt_updates_screen.dart';
 import 'package:flutter/material.dart';
 
-class DashboardGrid extends StatelessWidget {
-  const DashboardGrid({Key key}) : super(key: key);
+class KhelruytMenu extends StatelessWidget {
+  const KhelruytMenu({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,14 +15,6 @@ class DashboardGrid extends StatelessWidget {
           width: 2,
         ),
         borderRadius: BorderRadius.circular(10),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.orange[400].withOpacity(0.5),
-            spreadRadius: 3,
-            blurRadius: 3,
-            offset: Offset(0, 3), // changes position of shadow
-          ),
-        ],
       ),
       padding: EdgeInsets.all(5),
       child: GridView.count(
@@ -51,41 +42,17 @@ class Choice {
 
 const List<Choice> choices = const <Choice>[
   const Choice(
-      title: 'HR Updates',
+      title: 'Events',
       //  icon: Icons.home,
-      navigation: HRUpdatesScreen.routeName),
+      navigation: KhelruytUpdatesScreen.routeName),
   const Choice(
-      title: 'Khelruyt',
+      title: 'Health Data',
       //  icon: Icons.sports_cricket,
-      navigation: KhelruytOverviewScreen.routeName),
+      navigation: KhelruytUpdatesScreen.routeName),
   const Choice(
-      title: 'CISR Activities',
+      title: 'Activity Tracker',
       //  icon: Icons.contacts,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'Finance Updates',
-      // icon: Icons.money,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: '',
-      //icon: Icons.phone,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'News',
-      //  icon: Icons.camera_alt,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'WFH Request',
-      //  icon: Icons.settings,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'Worked Hours',
-      //   icon: Icons.photo_album,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'More',
-      // icon: Icons.wifi,
-      navigation: HRUpdatesScreen.routeName),
+      navigation: KhelruytUpdatesScreen.routeName),
 ];
 
 class SelectCard extends StatelessWidget {

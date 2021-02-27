@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../screens/add_new_quote_screen.dart';
+
+import '../screens/create_New_HRUpdate.dart';
+
 import '../providers/auth.dart';
 
 class HamBurgerMenu extends StatelessWidget {
@@ -34,6 +37,17 @@ class HamBurgerMenu extends StatelessWidget {
             onTap: () {
               Navigator.of(context)
                   .popAndPushNamed(AddNewQuoteScreen.routeName);
+            },
+          ),
+          Divider(
+            color: Colors.green,
+          ),
+          ListTile(
+            leading: Icon(Icons.schedule),
+            title: Text('New HRUpdates'),
+            onTap: () {
+              Navigator.of(context)
+                  .popAndPushNamed(CreateNewHRUpdate.routeName);
             },
           ),
           Divider(

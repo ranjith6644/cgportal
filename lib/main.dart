@@ -1,3 +1,4 @@
+import 'package:cgportal/providers/khelruytupdates.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,9 +12,14 @@ import './screens/welcomeScreen.dart';
 import './screens/splash_screen.dart';
 import './screens/loginScreen.dart';
 import './screens/signupScreen.dart';
+import './screens/hr_updates_screen.dart';
+import './screens/khelruyt_updates_screen.dart';
+import './screens/create_New_HRUpdate.dart';
+import './screens/khelruytOverview_screen.dart';
 
 import './providers/auth.dart';
 import './providers/quotes.dart';
+import './providers/hrupdates.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,6 +37,14 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider.value(value: Auth()),
+        ChangeNotifierProxyProvider<Auth, HRUpdates>(
+          create: (ctx) => HRUpdates(),
+          update: (ctx, auth, _) => _..update(auth),
+        ),
+        ChangeNotifierProxyProvider<Auth, KhelruytUpdates>(
+          create: (ctx) => KhelruytUpdates(),
+          update: (ctx, auth, _) => _..update(auth),
+        ),
         // Provider method to pass values from one Provider to Another provider
         ChangeNotifierProxyProvider<Auth, Quotes>(
           create: (ctx) => Quotes(),
@@ -42,9 +56,9 @@ class MyApp extends StatelessWidget {
           title: 'Portal CI',
           theme: ThemeData(
             brightness: Brightness.light,
-            primaryColor: Colors.lightGreen[400],
-            primarySwatch: Colors.lightGreen,
-            accentColor: Colors.lightGreen[600],
+            primaryColor: Colors.green[400],
+            primarySwatch: Colors.green,
+            accentColor: Colors.green[600],
             fontFamily: 'Roboto',
             appBarTheme: AppBarTheme(
               textTheme: ThemeData.light().textTheme.copyWith(
@@ -84,6 +98,10 @@ class MyApp extends StatelessWidget {
             LoginScreen.routeName: (ctx) => LoginScreen(),
             SignUpScreen.routeName: (ctx) => SignUpScreen(),
             ForgotPassword.routeName: (ctx) => ForgotPassword(),
+            KhelruytUpdatesScreen.routeName: (ctx) => KhelruytUpdatesScreen(),
+            HRUpdatesScreen.routeName: (ctx) => HRUpdatesScreen(),
+            CreateNewHRUpdate.routeName: (ctx) => CreateNewHRUpdate(),
+            KhelruytOverviewScreen.routeName: (ctx) => KhelruytOverviewScreen(),
           },
           onUnknownRoute: (settings) {
             return MaterialPageRoute(

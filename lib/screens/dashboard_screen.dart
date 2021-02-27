@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:overlay/overlay.dart';
 
-import '../widgets/quoteWidget.dart';
 import '../widgets/daily_quote_word.dart';
 import '../widgets/hamburger_menu.dart';
 import '../widgets/wish_name.dart';
@@ -63,26 +61,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 children: <Widget>[
                   WishName(),
                   DailyQuoteWord(),
-                  // QuoteWidget(),
-                  /* MaterialButton(
-                      color: Colors.lightBlueAccent,
-                      child: Text('Use Overlay Widget'),
-                      // Call CustomOverlay Constructor in on pressed function
-                      onPressed: () => CustomOverlay(
-                            context: context,
-                            // Using overlayWidget
-                            overlayWidget: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Card(
-                                child: Padding(
-                                  padding: EdgeInsets.all(8),
-                                  child: Text(
-                                      'This widget is passed to the overlay using overlayWidget so there is no close button, but you can always close this overlay by tapping anywhere in the darker areas.'),
-                                ),
-                              ),
-                            ),
-                          )
-                        ), */
                   DashboardGrid()
                 ],
               ),

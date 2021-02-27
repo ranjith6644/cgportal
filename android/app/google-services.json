@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904432700571",
+    "firebase_url": "https://cgportal-e7860-default-rtdb.firebaseio.com",
+    "project_id": "cgportal-e7860",
+    "storage_bucket": "cgportal-e7860.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904432700571:android:8d84a402353fe6e7570a3e",
+        "android_client_info": {
+          "package_name": "com.hack.cgportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904432700571-c4goisjibvcnp9jg0dqqth080uulfrkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3UzpJT02Kj_v0KOkWVaz6HUHEnMLmtaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904432700571-c4goisjibvcnp9jg0dqqth080uulfrkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

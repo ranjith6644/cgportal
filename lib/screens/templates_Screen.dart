@@ -8,19 +8,24 @@ import '../providers/auth.dart';
 
 import '../widgets/hamburger_menu.dart';
 
-class TemplatesScreen extends StatefulWidget {
+class TemplatesScreen extends StatelessWidget {
   static const routeName = '/templates';
-  @override
-  _TemplatesScreenState createState() => _TemplatesScreenState();
-}
+  const TemplatesScreen({Key key}) : super(key: key);
 
-class _TemplatesScreenState extends State<TemplatesScreen> {
-  List templates = new Templates().getTemplates();
+//   @override
+//   _TemplatesScreenState createState() => _TemplatesScreenState();
+// }
+//
+// class _TemplatesScreenState extends State<TemplatesScreen> {
+
+  // List templates = new Templates().getTemplates();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DefaultTabController(
+
+    List templates = new Templates().getTemplates();
+    return DefaultTabController(
+      // home: DefaultTabController(
         length: 2,
         child: Scaffold(
           backgroundColor: Colors.white,
@@ -57,7 +62,7 @@ class _TemplatesScreenState extends State<TemplatesScreen> {
               ],
           ),
         ),
-      ),
+      // ),
     );
   }
 

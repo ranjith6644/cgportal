@@ -16,6 +16,8 @@ class HamBurgerMenu extends StatelessWidget {
       child: Column(
         children: <Widget>[
           AppBar(
+      shadowColor: Color.fromRGBO(0, 171, 158, 1),
+        backgroundColor: Color.fromRGBO(0, 171, 158, 1),
             title: userName == null
                 ? Text('Hello Friend!')
                 : Text('Hello $userName'),
@@ -29,7 +31,7 @@ class HamBurgerMenu extends StatelessWidget {
             },
           ),
           Divider(
-            color: Colors.green,
+            color: Color.fromRGBO(0, 171, 158, 1),
           ),
           ListTile(
             leading: Icon(Icons.schedule),
@@ -40,7 +42,7 @@ class HamBurgerMenu extends StatelessWidget {
             },
           ),
           Divider(
-            color: Colors.green,
+            color: Color.fromRGBO(0, 171, 158, 1),
           ),
           ListTile(
             leading: Icon(Icons.schedule),
@@ -51,7 +53,7 @@ class HamBurgerMenu extends StatelessWidget {
             },
           ),
           Divider(
-            color: Colors.green,
+            color: Color.fromRGBO(0, 171, 158, 1),
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),

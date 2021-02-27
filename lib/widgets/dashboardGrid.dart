@@ -2,9 +2,11 @@
 import 'dart:io';
 
 // =======
+import 'package:cgportal/screens/cinergize_screen.dart';
 import 'package:cgportal/screens/hr_updates_screen.dart';
 import 'package:cgportal/screens/khelruytOverview_screen.dart';
 import 'package:cgportal/screens/khelruyt_updates_screen.dart';
+import 'package:cgportal/screens/templates_Screen.dart';
 // >>>>>>> 14761b7226651d7d05b665862d48a43348e922c1
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -86,40 +88,40 @@ const List<Choice> choices = const <Choice>[
 //   const Choice(title: 'More', icon: Icons.more_horiz),
 // =======
   const Choice(
-      title: 'HR Updates',
-      //  icon: Icons.home,
+      title: 'HR',
+       icon: Icons.hail,
       navigation: HRUpdatesScreen.routeName),
   const Choice(
       title: 'Khelruyt',
-      //  icon: Icons.sports_cricket,
+       icon: Icons.sports_cricket,
       navigation: KhelruytOverviewScreen.routeName),
   const Choice(
-      title: 'CISR Activities',
-      //  icon: Icons.contacts,
+      title: 'CISR',
+       icon: Icons.supervisor_account_outlined,
       navigation: HRUpdatesScreen.routeName),
   const Choice(
-      title: 'Finance Updates',
-      // icon: Icons.money,
+      title: 'Finance',
+      icon: Icons.account_balance_wallet,
       navigation: HRUpdatesScreen.routeName),
   const Choice(
-      title: '',
-      //icon: Icons.phone,
+      title: 'Templates',
+      icon: Icons.upload_file,
+      navigation: TemplatesScreen.routeName),
+  const Choice(
+      title: 'CInergize',
+      icon: Icons.article_rounded,
+      navigation: CinergizeScreen.routeName),
+  const Choice(
+      title: 'L&D',
+      icon: Icons.book_rounded,
       navigation: HRUpdatesScreen.routeName),
   const Choice(
-      title: 'News',
-      //  icon: Icons.camera_alt,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'WFH Request',
-      //  icon: Icons.settings,
-      navigation: HRUpdatesScreen.routeName),
-  const Choice(
-      title: 'Worked Hours',
-      //   icon: Icons.photo_album,
+      title: 'Utilization',
+      icon: Icons.hourglass_bottom_sharp,
       navigation: HRUpdatesScreen.routeName),
   const Choice(
       title: 'More',
-      // icon: Icons.wifi,
+      icon: Icons.more_horiz,
       navigation: HRUpdatesScreen.routeName),
 // >>>>>>> 14761b7226651d7d05b665862d48a43348e922c1
 ];

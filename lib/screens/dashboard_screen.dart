@@ -50,7 +50,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-          elevation: 0, backgroundColor: Colors.white, title: const Text('')),
+          shadowColor: Color.fromRGBO(0, 171, 158, 1),
+          backgroundColor: Color.fromRGBO(0, 171, 158, 1),
+          elevation: 0,
+          title: const Text('')),
       drawer: HamBurgerMenu(),
       body: _isLoading
           ? Center(

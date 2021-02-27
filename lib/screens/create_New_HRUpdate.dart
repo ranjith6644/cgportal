@@ -75,6 +75,8 @@ class _CreateNewHRUpdateState extends State<CreateNewHRUpdate> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          shadowColor: Color.fromRGBO(0, 171, 158, 1),
+          backgroundColor: Color.fromRGBO(0, 171, 158, 1),
         title: Text('Add New Entry'),
       ),
       drawer: HamBurgerMenu(),

@@ -8,7 +8,11 @@ class KhelruytOverviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Khelruyt')),
+      appBar: AppBar(
+          shadowColor: Color.fromRGBO(0, 171, 158, 1),
+          backgroundColor: Color.fromRGBO(0, 171, 158, 1),
+          title: Text('Khelruyt')
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[

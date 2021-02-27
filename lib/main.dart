@@ -19,6 +19,7 @@ import './screens/hr_updates_screen.dart';
 import './screens/khelruyt_updates_screen.dart';
 import './screens/create_New_HRUpdate.dart';
 import './screens/khelruytOverview_screen.dart';
+import './screens/cinergize_screen.dart';
 
 
 import './providers/auth.dart';
@@ -60,9 +61,9 @@ class MyApp extends StatelessWidget {
           title: 'Portal CI',
           theme: ThemeData(
             brightness: Brightness.light,
-            primaryColor: Colors.green[400],
-            primarySwatch: Colors.green,
-            accentColor: Colors.green[600],
+            primaryColor: Colors.cyan[400].withOpacity(1),
+            primarySwatch: Colors.cyan,
+            accentColor: Color.fromRGBO(0, 124, 145, 0.9),
             fontFamily: 'Roboto',
             appBarTheme: AppBarTheme(
               textTheme: ThemeData.light().textTheme.copyWith(
@@ -98,6 +99,7 @@ class MyApp extends StatelessWidget {
                           : WelcomeScreen(),
                 ),
           routes: {
+            // '/': (ctx) => DashboardScreen(),
             AddNewQuoteScreen.routeName: (ctx) => AddNewQuoteScreen(),
             LoginScreen.routeName: (ctx) => LoginScreen(),
             SignUpScreen.routeName: (ctx) => SignUpScreen(),
@@ -109,7 +111,7 @@ class MyApp extends StatelessWidget {
             HRUpdatesScreen.routeName: (ctx) => HRUpdatesScreen(),
             CreateNewHRUpdate.routeName: (ctx) => CreateNewHRUpdate(),
             KhelruytOverviewScreen.routeName: (ctx) => KhelruytOverviewScreen(),
-
+            CinergizeScreen.routeName: (ctx) => CinergizeScreen(),
           },
           onUnknownRoute: (settings) {
             return MaterialPageRoute(

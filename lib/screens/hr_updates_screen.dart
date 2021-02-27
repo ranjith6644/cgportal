@@ -18,6 +18,8 @@ class HRUpdatesScreen extends StatelessWidget {
         child: Scaffold(
           drawer: HamBurgerMenu(),
           appBar: AppBar(
+              shadowColor: Color.fromRGBO(0, 171, 158, 1),
+              backgroundColor: Color.fromRGBO(0, 171, 158, 1),
             title: Text('HR Updates'),
             bottom: TabBar(
               unselectedLabelStyle: TextStyle(fontStyle: FontStyle.italic),

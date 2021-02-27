@@ -18,7 +18,7 @@ class DailyQuoteWord extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-            color: Colors.lightGreen[200].withOpacity(0.5),
+            color: Color.fromRGBO(0, 171, 158, 1).withOpacity(0.5),
             spreadRadius: 3,
             blurRadius: 3,
             offset: Offset(0, 3), // changes position of shadow

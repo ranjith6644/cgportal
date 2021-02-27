@@ -11,6 +11,7 @@ import './screens/welcomeScreen.dart';
 import './screens/splash_screen.dart';
 import './screens/loginScreen.dart';
 import './screens/signupScreen.dart';
+import './screens/templates_Screen.dart';
 
 import './providers/auth.dart';
 import './providers/quotes.dart';
@@ -84,6 +85,7 @@ class MyApp extends StatelessWidget {
             LoginScreen.routeName: (ctx) => LoginScreen(),
             SignUpScreen.routeName: (ctx) => SignUpScreen(),
             ForgotPassword.routeName: (ctx) => ForgotPassword(),
+            TemplatesScreen.routeName: (ctx) => TemplatesScreen()
           },
           onUnknownRoute: (settings) {
             return MaterialPageRoute(

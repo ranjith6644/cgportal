@@ -36,11 +36,8 @@ class Quotes with ChangeNotifier {
     try {
       final response = await http.get(url);
       final extractedData = json.decode(response.body) as Map<String, dynamic>;
-      print(extractedData);
-      print('Get Quotes triggered');
       final List<Quote> quote = [];
       extractedData.forEach((quoteId, quoteData) {
-        print(quoteData['addedBy']);
         quote.add(Quote(
             addedBy: quoteData['addedBy'],
             quoteDetail: quoteData['quoteDetail'],

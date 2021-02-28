@@ -3,9 +3,10 @@ import 'dart:io';
 
 // =======
 import 'package:cgportal/screens/cinergize_screen.dart';
+import 'package:cgportal/screens/financeOverview_screen.dart';
 import 'package:cgportal/screens/hr_updates_screen.dart';
 import 'package:cgportal/screens/khelruytOverview_screen.dart';
-import 'package:cgportal/screens/khelruyt_updates_screen.dart';
+import 'package:cgportal/screens/page_under_construction_screen.dart';
 import 'package:cgportal/screens/templates_Screen.dart';
 // >>>>>>> 14761b7226651d7d05b665862d48a43348e922c1
 import 'package:flutter/material.dart';
@@ -88,21 +89,19 @@ const List<Choice> choices = const <Choice>[
 //   const Choice(title: 'More', icon: Icons.more_horiz),
 // =======
   const Choice(
-      title: 'HR',
-       icon: Icons.hail,
-      navigation: HRUpdatesScreen.routeName),
+      title: 'HR', icon: Icons.hail, navigation: HRUpdatesScreen.routeName),
   const Choice(
       title: 'Khelruyt',
-       icon: Icons.sports_cricket,
+      icon: Icons.sports_cricket,
       navigation: KhelruytOverviewScreen.routeName),
   const Choice(
       title: 'CISR',
-       icon: Icons.supervisor_account_outlined,
+      icon: Icons.supervisor_account_outlined,
       navigation: HRUpdatesScreen.routeName),
   const Choice(
       title: 'Finance',
       icon: Icons.account_balance_wallet,
-      navigation: HRUpdatesScreen.routeName),
+      navigation: FinanceOverview.routeName),
   const Choice(
       title: 'Templates',
       icon: Icons.upload_file,
@@ -114,15 +113,15 @@ const List<Choice> choices = const <Choice>[
   const Choice(
       title: 'L&D',
       icon: Icons.book_rounded,
-      navigation: HRUpdatesScreen.routeName),
+      navigation: PageUnderConstructionScreen.routeName),
   const Choice(
       title: 'Utilization',
       icon: Icons.hourglass_bottom_sharp,
-      navigation: HRUpdatesScreen.routeName),
+      navigation: PageUnderConstructionScreen.routeName),
   const Choice(
       title: 'More',
       icon: Icons.more_horiz,
-      navigation: HRUpdatesScreen.routeName),
+      navigation: PageUnderConstructionScreen.routeName),
 // >>>>>>> 14761b7226651d7d05b665862d48a43348e922c1
 ];
 
@@ -135,7 +134,7 @@ class SelectCard extends StatelessWidget {
     var theme = Theme.of(context);
     return InkWell(
 // <<<<<<< HEAD
-      // When the user taps the button, show a snackbar.
+        // When the user taps the button, show a snackbar.
         onTap: () {
           // Scaffold.of(context).showSnackBar(SnackBar(
           //   content: Text('Tap'),
@@ -144,29 +143,29 @@ class SelectCard extends StatelessWidget {
         },
         splashColor: Colors.cyanAccent,
         child: Card(
-        color: Color.fromRGBO(0, 171, 158, 1).withOpacity(0.5),
-        elevation: 5,
-        shadowColor: Colors.grey,
-        child: Center(
-          child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Expanded(
-                    child: Icon(choice.icon, size: 35.0, color: Colors.white)),
-                Text(
-                  choice.title,
-                  style: theme.textTheme.headline6.copyWith(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontStyle: FontStyle.normal),
+            color: Color.fromRGBO(0, 171, 158, 1).withOpacity(0.5),
+            elevation: 5,
+            shadowColor: Colors.grey,
+            child: Center(
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Expanded(
+                        child:
+                            Icon(choice.icon, size: 35.0, color: Colors.white)),
+                    Text(
+                      choice.title,
+                      style: theme.textTheme.headline6.copyWith(
+                          fontSize: 20,
+                          color: Colors.white,
+                          fontStyle: FontStyle.normal),
                       textAlign: TextAlign.start,
-                ),
-                SizedBox(
-                  height: 15,
-                )
-              ]),
-
-        )));
+                    ),
+                    SizedBox(
+                      height: 15,
+                    )
+                  ]),
+            )));
 // =======
 //       onTap: () {
 //         Navigator.of(context).pushNamed('${choice.navigation}');

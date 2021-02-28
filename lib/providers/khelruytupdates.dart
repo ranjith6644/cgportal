@@ -99,7 +99,6 @@ class KhelruytUpdates with ChangeNotifier {
             creationDate: DateTime.parse(hrEventsData['creationDate'])));
       });
       _khelruytUpdatesList = loadedKhelruytUpdates;
-      print(_khelruytUpdatesList);
       notifyListeners();
     } catch (error) {}
   }

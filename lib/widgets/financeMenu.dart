@@ -1,9 +1,9 @@
-import 'package:cgportal/screens/hr_updates_screen.dart';
-import 'package:cgportal/screens/khelruyt_updates_screen.dart';
 import 'package:flutter/material.dart';
 
-class KhelruytMenu extends StatelessWidget {
-  const KhelruytMenu({Key key}) : super(key: key);
+import '../screens/page_under_construction_screen.dart';
+
+class FinanceMenu extends StatelessWidget {
+  const FinanceMenu({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,17 +42,17 @@ class Choice {
 
 const List<Choice> choices = const <Choice>[
   const Choice(
-      title: 'Events',
-      icon: Icons.event,
-      navigation: KhelruytUpdatesScreen.routeName),
+      title: 'Updates',
+      icon: Icons.announcement,
+      navigation: PageUnderConstructionScreen.routeName),
   const Choice(
-      title: 'Health',
-      icon: Icons.accessibility,
-      navigation: KhelruytUpdatesScreen.routeName),
+      title: 'Form-16',
+      icon: Icons.file_copy,
+      navigation: PageUnderConstructionScreen.routeName),
   const Choice(
-      title: 'Workouts',
-      icon: Icons.fitness_center,
-      navigation: KhelruytUpdatesScreen.routeName),
+      title: 'Upload',
+      icon: Icons.upload_file,
+      navigation: PageUnderConstructionScreen.routeName),
 ];
 
 class SelectCard extends StatelessWidget {

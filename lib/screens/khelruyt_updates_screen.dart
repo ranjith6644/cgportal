@@ -1,5 +1,5 @@
 import 'package:cgportal/providers/khelruytupdates.dart';
-import 'package:cgportal/widgets/hamburger_menu.dart';
+
 import 'package:cgportal/widgets/activeKhelruytEvents.dart';
 import 'package:cgportal/widgets/archivedKhelruytEvents.dart';
 import 'package:provider/provider.dart';
@@ -11,14 +11,12 @@ class KhelruytUpdatesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
-    Provider.of<KhelruytUpdates>(context).fetchAndShowData();
     return DefaultTabController(
         length: 2,
         child: Scaffold(
-          drawer: HamBurgerMenu(),
           appBar: AppBar(
-              shadowColor: Color.fromRGBO(0, 171, 158, 1),
-              backgroundColor: Color.fromRGBO(0, 171, 158, 1),
+            shadowColor: Color.fromRGBO(0, 171, 158, 1),
+            backgroundColor: Color.fromRGBO(0, 171, 158, 1),
             title: Text('Khelruyt Updates'),
             bottom: TabBar(
               unselectedLabelStyle: TextStyle(fontStyle: FontStyle.italic),

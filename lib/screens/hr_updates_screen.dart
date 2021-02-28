@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 
 import '../widgets/archivedHREvents.dart';
 import '../widgets/activeHREvents.dart';
-import '../widgets/hamburger_menu.dart';
 
 class HRUpdatesScreen extends StatelessWidget {
   const HRUpdatesScreen({Key key}) : super(key: key);
@@ -16,10 +15,10 @@ class HRUpdatesScreen extends StatelessWidget {
     return DefaultTabController(
         length: 2,
         child: Scaffold(
-          drawer: HamBurgerMenu(),
+          //drawer: HamBurgerMenu(),
           appBar: AppBar(
-              shadowColor: Color.fromRGBO(0, 171, 158, 1),
-              backgroundColor: Color.fromRGBO(0, 171, 158, 1),
+            shadowColor: Color.fromRGBO(0, 171, 158, 1),
+            backgroundColor: Color.fromRGBO(0, 171, 158, 1),
             title: Text('HR Updates'),
             bottom: TabBar(
               unselectedLabelStyle: TextStyle(fontStyle: FontStyle.italic),

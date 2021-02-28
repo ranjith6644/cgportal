@@ -1,3 +1,5 @@
+import 'package:cgportal/providers/dailyWords.dart';
+import 'package:cgportal/providers/khelruytupdates.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -30,12 +32,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
       setState(() {
         _isLoading = true;
       });
+      Provider.of<DailyWords>(context).getDailyWords();
+      Provider.of<KhelruytUpdates>(context).fetchAndShowData();
       Provider.of<Quotes>(context).getQuotes().then((_) {
         setState(() {
           _isLoading = false;
         });
       });
     }
+
     _isInit = false;
     super.didChangeDependencies();
   }

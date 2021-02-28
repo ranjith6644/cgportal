@@ -99,7 +99,6 @@ class HRUpdates with ChangeNotifier {
             creationDate: DateTime.parse(hrEventsData['creationDate'])));
       });
       _hrUpdatesList = loadedHRUpdates;
-      print(_hrUpdatesList);
       notifyListeners();
     } catch (error) {}
   }

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../screens/add_new_quote_screen.dart';
-
 import '../screens/create_New_HRUpdate.dart';
+import '../screens/add_newdailyWord_screen.dart';
 
 import '../providers/auth.dart';
 
@@ -16,8 +16,8 @@ class HamBurgerMenu extends StatelessWidget {
       child: Column(
         children: <Widget>[
           AppBar(
-      shadowColor: Color.fromRGBO(0, 171, 158, 1),
-        backgroundColor: Color.fromRGBO(0, 171, 158, 1),
+            shadowColor: Color.fromRGBO(0, 171, 158, 1),
+            backgroundColor: Color.fromRGBO(0, 171, 158, 1),
             title: userName == null
                 ? Text('Hello Friend!')
                 : Text('Hello $userName'),
@@ -46,10 +46,21 @@ class HamBurgerMenu extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.schedule),
-            title: Text('New HRUpdates'),
+            title: Text('Add New HR Update'),
             onTap: () {
               Navigator.of(context)
                   .popAndPushNamed(CreateNewHRUpdate.routeName);
+            },
+          ),
+          Divider(
+            color: Color.fromRGBO(0, 171, 158, 1),
+          ),
+          ListTile(
+            leading: Icon(Icons.schedule),
+            title: Text('Add New Word'),
+            onTap: () {
+              Navigator.of(context)
+                  .popAndPushNamed(AddNewDailyWordScreen.routeName);
             },
           ),
           Divider(

@@ -12,19 +12,20 @@ import './screens/welcomeScreen.dart';
 import './screens/splash_screen.dart';
 import './screens/loginScreen.dart';
 import './screens/signupScreen.dart';
-
 import './screens/templates_Screen.dart';
-
 import './screens/hr_updates_screen.dart';
 import './screens/khelruyt_updates_screen.dart';
 import './screens/create_New_HRUpdate.dart';
 import './screens/khelruytOverview_screen.dart';
 import './screens/cinergize_screen.dart';
-
+import './screens/financeOverview_screen.dart';
+import './screens/page_under_construction_screen.dart';
+import './screens/add_newdailyWord_screen.dart';
 
 import './providers/auth.dart';
 import './providers/quotes.dart';
 import './providers/hrupdates.dart';
+import './providers/dailyWords.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -53,6 +54,10 @@ class MyApp extends StatelessWidget {
         // Provider method to pass values from one Provider to Another provider
         ChangeNotifierProxyProvider<Auth, Quotes>(
           create: (ctx) => Quotes(),
+          update: (ctx, auth, _) => _..update(auth),
+        ),
+        ChangeNotifierProxyProvider<Auth, DailyWords>(
+          create: (ctx) => DailyWords(),
           update: (ctx, auth, _) => _..update(auth),
         ),
       ],
@@ -104,14 +109,16 @@ class MyApp extends StatelessWidget {
             LoginScreen.routeName: (ctx) => LoginScreen(),
             SignUpScreen.routeName: (ctx) => SignUpScreen(),
             ForgotPassword.routeName: (ctx) => ForgotPassword(),
-
+            PageUnderConstructionScreen.routeName: (ctx) =>
+                PageUnderConstructionScreen(),
             TemplatesScreen.routeName: (ctx) => TemplatesScreen(),
-
+            FinanceOverview.routeName: (ctx) => FinanceOverview(),
             KhelruytUpdatesScreen.routeName: (ctx) => KhelruytUpdatesScreen(),
             HRUpdatesScreen.routeName: (ctx) => HRUpdatesScreen(),
             CreateNewHRUpdate.routeName: (ctx) => CreateNewHRUpdate(),
             KhelruytOverviewScreen.routeName: (ctx) => KhelruytOverviewScreen(),
             CinergizeScreen.routeName: (ctx) => CinergizeScreen(),
+            AddNewDailyWordScreen.routeName: (ctx) => AddNewDailyWordScreen(),
           },
           onUnknownRoute: (settings) {
             return MaterialPageRoute(

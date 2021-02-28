@@ -29,7 +29,6 @@ class TemplatesScreen extends StatelessWidget {
         length: 2,
         child: Scaffold(
           backgroundColor: Colors.white,
-          drawer: HamBurgerMenu(),
           appBar: AppBar(
             shadowColor: Color.fromRGBO(0, 171, 158, 1),
             backgroundColor: Color.fromRGBO(0, 171, 158, 1),

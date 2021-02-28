@@ -51,7 +51,7 @@ class DailyQuoteWord extends StatelessWidget {
                     margin: EdgeInsets.symmetric(horizontal: 5.0),
                     padding: EdgeInsets.only(top: 10.0),
                     // decoration: BoxDecoration(
-                    //     color: Colors.amber
+                    //     color: Colors.black,
                     // ),
                     child: i
 

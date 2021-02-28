@@ -83,13 +83,6 @@ class TemplatesScreen extends StatelessWidget {
             template.templateName,
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
-          // subtitle: Text("Intermediate", style: TextStyle(color: Colors.white)),
-
-          // subtitle: Row(
-          //   children: <Widget>[
-          //     Text(template.templateDescription, style: TextStyle(color: Colors.white))
-          //   ],
-          // ),
           trailing:
           Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0)),
     ),

@@ -1,12 +1,5 @@
-import 'package:cgportal/models/template.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-
-import '../providers/templates.dart';
-import '../providers/auth.dart';
-
-import '../widgets/hamburger_menu.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class CinergizeScreen extends StatelessWidget {
@@ -22,7 +15,6 @@ class CinergizeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      drawer: HamBurgerMenu(),
       appBar: AppBar(
         shadowColor: Color.fromRGBO(0, 171, 158, 1),
         backgroundColor: Color.fromRGBO(0, 171, 158, 1),

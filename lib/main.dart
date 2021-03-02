@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import './screens/add_new_quote_screen.dart';
+import './screens/utilization_screen.dart';
 import './screens/dashboard_screen.dart';
 import './screens/forgot_pwd_screen.dart';
 import './screens/welcomeScreen.dart';
@@ -119,6 +120,7 @@ class MyApp extends StatelessWidget {
             KhelruytOverviewScreen.routeName: (ctx) => KhelruytOverviewScreen(),
             CinergizeScreen.routeName: (ctx) => CinergizeScreen(),
             AddNewDailyWordScreen.routeName: (ctx) => AddNewDailyWordScreen(),
+            UtilizationScreen.routeName: (ctx) => UtilizationScreen(),
           },
           onUnknownRoute: (settings) {
             return MaterialPageRoute(

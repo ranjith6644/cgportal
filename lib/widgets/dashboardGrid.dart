@@ -8,6 +8,7 @@ import 'package:cgportal/screens/hr_updates_screen.dart';
 import 'package:cgportal/screens/khelruytOverview_screen.dart';
 import 'package:cgportal/screens/page_under_construction_screen.dart';
 import 'package:cgportal/screens/templates_Screen.dart';
+import 'package:cgportal/screens/utilization_screen.dart';
 // >>>>>>> 14761b7226651d7d05b665862d48a43348e922c1
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -117,7 +118,7 @@ const List<Choice> choices = const <Choice>[
   const Choice(
       title: 'Utilization',
       icon: Icons.hourglass_bottom_sharp,
-      navigation: PageUnderConstructionScreen.routeName),
+      navigation: UtilizationScreen.routeName),
   const Choice(
       title: 'More',
       icon: Icons.more_horiz,
